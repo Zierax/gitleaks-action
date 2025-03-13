@@ -22,5 +22,5 @@ jobs:
           ref: master
       - uses: ./ # Runs the action that's in the root directory of the repo checked out above. i.e. This action itself.
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets._TOKEN }}
           GITLEAKS_LICENSE: ${{ secrets.GITLEAKS_LICENSE}}
